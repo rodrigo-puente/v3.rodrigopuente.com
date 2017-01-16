@@ -3,7 +3,11 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "masonry": "^4.1.1",
+    "imagesloaded": "^4.1.1",
+    "in-view": "*",
+    "perfect-scrollbar": "^0.6.16"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -11,6 +15,29 @@
         "assets/stylesheets/_bootstrap.scss",
         "assets/fonts/bootstrap/*",
         "assets/javascripts/bootstrap.js"
+      ]
+    },
+    "masonry": {
+      "main": [
+        "dist/masonry.pkgd.js"
+      ],
+      "ignore": false
+    },
+    "outlayer": {
+      "main": [
+        "item.js",
+        "outlayer.js"
+      ]
+    },
+    "in-view": {
+      "main": [
+        "dist/in-view.min.js"
+      ]
+    },
+    "perfect-scrollbar": {
+      "main": [
+        "css/perfect-scrollbar.min.css",
+        "js/perfect-scrollbar.jquery.min.js"
       ]
     }
   },
