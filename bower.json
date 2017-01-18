@@ -3,11 +3,11 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.1",
     "masonry": "^4.1.1",
     "imagesloaded": "^4.1.1",
     "in-view": "*",
-    "perfect-scrollbar": "^0.6.16"
+    "perfect-scrollbar": "^0.6.16",
+    "lazysizes": "^2.0.7"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -36,7 +36,6 @@
     },
     "perfect-scrollbar": {
       "main": [
-        "css/perfect-scrollbar.min.css",
         "js/perfect-scrollbar.jquery.min.js"
       ]
     }
