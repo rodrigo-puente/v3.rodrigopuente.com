@@ -5,6 +5,7 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
+const uncss = require('gulp-uncss');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -20,6 +21,9 @@ gulp.task('styles', () => {
       precision: 10,
       includePaths: ['.']
     }).on('error', $.sass.logError))
+    .pipe(uncss({
+      html: ['app/index.html']
+    }))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
@@ -146,6 +150,9 @@ gulp.task('wiredep', () => {
     .pipe($.filter(file => file.stat && file.stat.size))
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)+/
+    }))
+    .pipe(uncss({
+      html: ['app/index.html']
     }))
     .pipe(gulp.dest('app/styles'));
 

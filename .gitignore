@@ -3,6 +3,7 @@ dist
 .tmp
 bower_components
 test/bower_components
+
 # Compiled source #
 ###################
 *.com
@@ -39,4 +40,8 @@ test/bower_components
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+<<<<<<< Updated upstream
 Thumbs.db
+=======
+Thumbs.db
+>>>>>>> Stashed changes

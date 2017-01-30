@@ -2,12 +2,7 @@
   "name": "rodrigopuente-com",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
-    "masonry": "^4.1.1",
-    "imagesloaded": "^4.1.1",
-    "in-view": "*",
-    "perfect-scrollbar": "^0.6.16",
-    "lazysizes": "^2.0.7"
+    "bootstrap-sass": "~3.3.5"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -15,28 +10,6 @@
         "assets/stylesheets/_bootstrap.scss",
         "assets/fonts/bootstrap/*",
         "assets/javascripts/bootstrap.js"
-      ]
-    },
-    "masonry": {
-      "main": [
-        "dist/masonry.pkgd.js"
-      ],
-      "ignore": false
-    },
-    "outlayer": {
-      "main": [
-        "item.js",
-        "outlayer.js"
-      ]
-    },
-    "in-view": {
-      "main": [
-        "dist/in-view.min.js"
-      ]
-    },
-    "perfect-scrollbar": {
-      "main": [
-        "js/perfect-scrollbar.jquery.min.js"
       ]
     }
   },
