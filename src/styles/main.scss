@@ -1,12 +1,11 @@
-$icon-font-path: '../fonts/';
+// reference this issue https://github.com/webpack-contrib/sass-loader/issues/40
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
 $background1: #FFF;
 $background2: #ED334A;
 $background3: #ffbf00;
 
-// bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 html, body {
   font-size: 16px;
